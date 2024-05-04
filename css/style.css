@@ -1,20 +1,175 @@
 @charset "utf-8";
 
-/* 共通
+/* テスト用
 --------------------------------------- */
 
+/* 共通
+--------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(2.4rem, calc(2.3rem + 0.625vw), 3rem);
+}
+.thin-text {
+  color: rgb(143, 143, 143);
+}
 
 /* ヘッダー
 --------------------------------------- */
-
+header {
+  background-color: whitesmoke;
+  position: fixed;
+  width: 100%;
+}
+header * {
+  white-space: nowrap;
+}
+header .wrapper {
+  display: flex;
+  align-items: last baseline;
+  justify-content: space-between;
+  height: clamp(5rem, calc(4.8rem + 0.825vh), 5.2rem);
+  padding-bottom: 0.5rem;
+}
+/* ロゴ */
+.logo {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+/* メニュー */
+header li {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
 
 /* フッター
 --------------------------------------- */
+footer {
+  background-color: whitesmoke;
+  width: 100%;
+  height: clamp(5rem, calc(4.8rem + 0.825vh), 5.2rem);
+}
 
-
-/* ホーム
+/* ホームコンテンツ
 --------------------------------------- */
+#home {
+  padding-top: 3rem;
+}
+/* 各ブロック共通 */
+.block-header {
+  font-family: "DM Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+  padding-left: clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
+  text-decoration: underline;
+}
+.block-items {
+  margin: clamp(2.4rem, calc(2.3rem + 0.625vh), 3rem) clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
+}
+.block-item {
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: clamp(1.2rem, calc(1rem + 0.625vh), 1.7rem) 0 0;
+  padding: clamp(2.4rem, calc(2.2rem + 0.325vh), 2.9rem) clamp(2.4rem, calc(2.2rem + 0.625vw), 2.9rem);
+}
+.item-header {
+  font-weight: 600;
+}
+.item-date {
+  color: rgb(97, 97, 97);
+  font-weight: 300;
+}
+.item-text-header {
+  font-weight: 600;
+}
+.item-text {
+  margin-top: clamp(1.1rem, calc(0.9rem + 0.625vh), 1.6rem);
+}
+.image-block {
+  text-align: center;
+}
+.image-block-item {
+  margin-left: calc((((100vw - 100%) / 2) * -1) + clamp(2.4rem, calc(2.3rem + 0.625vw), 3rem));
+  margin-right: calc((((100vw - 100%) / 2) * -1) + clamp(2.4rem, calc(2.3rem + 0.625vw), 3rem));
+  width: clamp(55rem, 80vw, 85rem);
+}
+/* ファーストビュー */
+.first-view * {
+  font-family:
+    'メイリオ',
+    'Meiryo',
+    'MS ゴシック',
+    'Hiragino Kaku Gothic ProN',
+    'ヒラギノ角ゴ ProN W3',
+    sans-serif;
+}
+.first-view {
+  background-image: url(../images/first-view.jpg);
+  background-color: rgba(255, 255, 255, 0.486);
+  background-blend-mode: color;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+.first-view-content {
+  padding: 5rem 0 0.5rem;
+}
+.first-view h1 {
+  text-align: center;
+}
+.first-view-content h1 span {
+  white-space: nowrap;
+}
+.first-view h1 * {
+  display: inline-block;
+}
+.first-view p {
+  margin: 1rem auto;
+}
+.works-slide {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: calc(90vmin - 10rem);
+  min-width: 40rem;
+  aspect-ratio: 5/3;
+  margin: 3rem auto;
+}
+.works-slide li {
+  display: inline-block;
+}
+/* About */
+.about .thin-text {
+  padding-left: clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
+}
+.about .block-item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.self-introduction ul {
+  padding-top: clamp(1.1rem, calc(0.9rem + 0.625vh), 1.6rem);
+}
+/* Activity */
+.activity .block-item {
+  background-color: whitesmoke;
+}
 
-
-/* ホーム
+/* アクティビティコンテンツ
 --------------------------------------- */
