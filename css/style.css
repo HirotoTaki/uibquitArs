@@ -38,7 +38,7 @@ header {
 header * {
   white-space: nowrap;
 }
-header .wrapper {
+.header-items {
   display: flex;
   align-items: last baseline;
   justify-content: space-between;
