@@ -1,64 +1,183 @@
 @charset "utf-8";
 
-/* テスト用
+/* test
 --------------------------------------- */
+.test {
+  padding: 6rem;
+  height: 80vh;
+}
 
-/* 共通
+.test * {
+  text-wrap: nowrap;
+}
+
+/* common
 --------------------------------------- */
+/* all */
 * {
   margin: 0;
   padding: 0;
   border: none;
+  font-family: "DM Mono", "M PLUS 1 Code", "IBM Plex Sans JP", "Zen Maru Gothic", "Kiwi Maru", sans-serif;
+  font-style: normal;
 }
+
+/* font */
 html {
   font-size: 62.5%;
 }
+
+p {
+  font-size: clamp(1.2rem, calc(1rem + 0.625vw), 1.7rem);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.mv-font {
+  font-size: clamp(3.0rem, calc(3.0rem + 0.625vw), 3.5rem);
+  font-weight: bolder;
+  font-style: normal;
+}
+
+h1 {
+  font-size: clamp(2.4rem, calc(2.2rem + 0.625vw), 3.0rem);
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2 {
+  font-size: clamp(1.8rem, calc(1.7rem + 0.625vw), 2.6rem);
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3 {
+  font-size: clamp(1.5rem, calc(1.3rem + 0.625vw), 2.2rem);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.h1-w400 {
+  font-size: clamp(2.4rem, calc(2.2rem + 0.625vw), 3.0rem);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h2-w400 {
+  font-size: clamp(1.8rem, calc(1.7rem + 0.625vw), 2.6rem);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h3-w400 {
+  font-size: clamp(1.5rem, calc(1.3rem + 0.625vw), 2.2rem);
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: clamp(1.2rem, calc(1rem + 0.625vw), 1.7rem);
+  font-weight: normal;
+  font-style: normal;
+}
+
+h5 {
+  font-size: clamp(1.1rem, calc(0.8rem + 0.625vw), 1.4rem);
+  font-weight: normal;
+  font-style: normal;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* link */
 a {
+  font-size: inherit;
   text-decoration: none;
 }
+
+/* list */
 li {
   list-style: none;
 }
+
+/* mv */
+main {
+  padding-top: clamp(4.5rem, calc(4.2rem + 0.825vh), 4.9rem);
+}
+
+/* wrap */
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 clamp(2.4rem, calc(2.3rem + 0.625vw), 3rem);
+  padding: 0 clamp(4rem, calc(3.9rem + 0.625vw), 4.2rem);
 }
-.thin-text {
+
+/* block */
+.block1 {
+  margin: 0 clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
+}
+
+.block2 {
+  margin: 0 clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
+}
+
+.block-item {
+  margin-top: 1rem;
+}
+
+/* image-block */
+.image-block {
+  text-align: center;
+}
+
+.image-block-item {
+  margin-left: calc((((100vw - 100%) / 2) * -1) + clamp(2.4rem, calc(2.3rem + 0.625vw), 3rem));
+  margin-right: calc((((100vw - 100%) / 2) * -1) + clamp(2.4rem, calc(2.3rem + 0.625vw), 3rem));
+  width: clamp(55rem, 80vw, 85rem);
+}
+
+/* etc */
+hr {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 0;
+}
+.hide-text {
   color: rgb(143, 143, 143);
 }
 
-/* ヘッダー
+/* HEADER
 --------------------------------------- */
+header * {
+  white-space: nowrap;
+}
+
 header {
   background-color: whitesmoke;
   position: fixed;
   width: 100%;
 }
-header * {
-  white-space: nowrap;
-}
-.header-items {
+
+.header-block {
   display: flex;
   align-items: last baseline;
   justify-content: space-between;
-  height: clamp(5rem, calc(4.8rem + 0.825vh), 5.2rem);
-  padding-bottom: 0.5rem;
+  height: fit-content;
+  padding: 0.8rem 0;
 }
-/* ロゴ */
-.logo {
-  font-family: "DM Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-}
-/* メニュー */
+
+/* menu */
 header li {
   margin: 0 0.5rem;
   display: inline-block;
 }
 
-/* フッター
+/* FOOTER
 --------------------------------------- */
 footer {
   background-color: whitesmoke;
@@ -66,61 +185,19 @@ footer {
   height: clamp(5rem, calc(4.8rem + 0.825vh), 5.2rem);
 }
 
-/* ホームコンテンツ
+/* HOME
 --------------------------------------- */
-#home {
-  padding-top: 3rem;
+/* common */
+#home .main-item:not(#home .main-item:first-child) {
+  margin: 2rem auto;
 }
-/* 各ブロック共通 */
-.block-header {
-  font-family: "DM Mono", monospace;
-  font-weight: 600;
-  font-style: normal;
-  color: black;
-  padding-left: clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
-  text-decoration: underline;
+
+#home .block1>.block-header {
+  padding-left: 1rem;
 }
-.block-items {
-  margin: clamp(2.4rem, calc(2.3rem + 0.625vh), 3rem) clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
-}
-.block-item {
-  box-sizing: border-box;
-  border-radius: 10px;
-  margin: clamp(1.2rem, calc(1rem + 0.625vh), 1.7rem) 0 0;
-  padding: clamp(2.4rem, calc(2.2rem + 0.325vh), 2.9rem) clamp(2.4rem, calc(2.2rem + 0.625vw), 2.9rem);
-}
-.item-header {
-  font-weight: 600;
-}
-.item-date {
-  color: rgb(97, 97, 97);
-  font-weight: 300;
-}
-.item-text-header {
-  font-weight: 600;
-}
-.item-text {
-  margin-top: clamp(1.1rem, calc(0.9rem + 0.625vh), 1.6rem);
-}
-.image-block {
-  text-align: center;
-}
-.image-block-item {
-  margin-left: calc((((100vw - 100%) / 2) * -1) + clamp(2.4rem, calc(2.3rem + 0.625vw), 3rem));
-  margin-right: calc((((100vw - 100%) / 2) * -1) + clamp(2.4rem, calc(2.3rem + 0.625vw), 3rem));
-  width: clamp(55rem, 80vw, 85rem);
-}
-/* ファーストビュー */
-.first-view * {
-  font-family:
-    'メイリオ',
-    'Meiryo',
-    'MS ゴシック',
-    'Hiragino Kaku Gothic ProN',
-    'ヒラギノ角ゴ ProN W3',
-    sans-serif;
-}
-.first-view {
+
+/* first-view */
+.first-view-bg {
   background-image: url(../images/first-view.jpg);
   background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: color;
@@ -128,48 +205,68 @@ footer {
   background-size: cover;
   background-position: center;
 }
-.first-view-content {
-  padding: 5rem 0 0.5rem;
-}
-.first-view h1 {
+
+.first-view-block * {
   text-align: center;
+  margin: 0 auto;
 }
-.first-view-content h1 span {
+
+.first-view-block {
+  padding: 3rem 0;
+}
+
+.first-view-block h1 span {
   white-space: nowrap;
+  font-weight: 600;
+  display: inline-block
 }
-.first-view h1 * {
-  display: inline-block;
+
+.first-view-item:not(.first-view-item:first-child) {
+  margin-top: 1rem;
 }
-.first-view p {
-  margin: 1rem auto;
-}
+
 .works-slide {
-  box-sizing: border-box;
   background-color: whitesmoke;
   border-radius: 10px;
   width: calc(90vmin - 10rem);
   min-width: 40rem;
   aspect-ratio: 5/3;
-  margin: 3rem auto;
-}
-.works-slide li {
-  display: inline-block;
-}
-/* About */
-.about .thin-text {
-  padding-left: clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
-}
-.about .block-item {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.self-introduction ul {
-  padding-top: clamp(1.1rem, calc(0.9rem + 0.625vh), 1.6rem);
-}
-/* Activity */
-.activity .block-item {
-  background-color: whitesmoke;
 }
 
-/* アクティビティコンテンツ
+/* About */
+.about .block2>.block-header {
+  text-align: left;
+  width: fit-content;
+  margin:  0 calc(clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem) * 0.5 * -1);
+  padding: calc(clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem) * 0.25) calc(clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem) * 0.5);
+  border-radius: 0.3rem;
+  background-color: rgb(227, 241, 241);
+  border: solid 1px #000;
+}
+.about .block2 {
+  margin-top: 3rem;
+}
+.about .block3 {
+  margin-top: 2rem;
+}
+
+/* Activity */
+.activity .block2{
+  margin: 2.0rem calc(clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem) * -1);
+  padding: 0.5rem clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
+  background-color: rgb(255, 247, 209);
+  border-radius: 1rem;
+}
+.activity .block2 .block-item:last-child {
+  margin-bottom: 1.5rem;
+}
+
+/* ACTIVITY
 --------------------------------------- */
+/* common */
+.page-header-center {
+  width: fit-content;
+  margin: 0.8rem auto 0;
+}
+
+

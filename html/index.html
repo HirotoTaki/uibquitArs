@@ -9,9 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=M+PLUS+1+Code&family=IBM+Plex+Sans+JP&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/ress.css">
@@ -21,226 +19,280 @@
 </head>
 
 <body>
-  <!-- ヘッダー -->
+  <!-- HEADER -->
   <header>
     <div class="wrapper">
-      <div class="header-items">
-        <div class="logo font-size-LL"><a href="index.html">ubiquitArs</a></div>
-        <div class="font-size-M">
+      <div class="header-block">
+        <!-- ホームボタン -->
+        <div class="header-item logo">
+          <h1><a href="index.html">ubiquitArs</a></h1>
+        </div>
+
+        <!-- ヘッダーメニュー -->
+        <div class="header-item">
           <ul>
-            <li><a href="activity.html">ACTIVITY</a></li>
-            <li><a href="works.html">WORKS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li>
+              <h3 class="h3-normal"><a href="activity.html">ACTIVITY</a></h3>
+            </li>
+            <li>
+              <h3 class="h3-normal"><a href="works.html">WORKS</a></h3>
+            </li>
+            <li>
+              <h3 class="h3-normal"><a href="contact.html">CONTACT</a></h3>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <!-- /ヘッダー -->
+  <!-- /HEADER -->
 
-  <!-- ホームコンテンツ -->
+
+  <!-- HOME -->
   <main id="home">
-
-    <!-- ファーストビュー -->
-    <div class="first-view">
+    <!-- first-view -->
+    <div class="first-view-bg main-item">
       <div class="wrapper">
-        <div class="first-view-content">
-          <h1 class="font-size-LL"><span>いつでも、だれでも</span><span>使えるシステムを</span></h1>
-          <p class="font-size-M">はじめまして！ubiquitArs（ユビキタース）と申します！<br>ubiquitArsでは「いつでも、だれでも使えるシステム」を作ることを念頭に日々開発・業務に取り組んでいます。<br>また、当サイトでは主に私たちの実績や成果物を掲載しています。まだまだ不得手な部分もございますが、ご覧いただきレビューをいただけますと幸いです。</p>
-          <div class="works-slide">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
+        <div class="first-view-block">
+          <h1 class="first-view-item">
+            <span>いつでも、だれでも</span>
+            <span>使えるシステムを</span>
+          </h1>
+          <p class="first-view-item">
+            はじめまして！ubiquitArs（ユビキタース）と申します！<br>ubiquitArsでは「いつでも、だれでも使えるシステム」を作ることを念頭に日々開発・業務に取り組んでいます。<br>また、当サイトでは主に私たちの実績や成果物を掲載しています。まだまだ不得手な部分もございますが、ご覧いただきレビューをいただけますと幸いです。
+          </p>
+          <div class="first-view-item works-slide"></div>
         </div>
       </div>
     </div>
-    <!-- /ファーストビュー -->
+    <!-- /first-view -->
 
-    <!-- アバウト -->
-    <div class="about wrapper">
-      
-      <div class="block-items">
-        <div class="block-header font-size-L">About</div>
-        <p class="thin-text font-size-S">
+    <!-- about -->
+    <div class="about main-item wrapper">
+      <div class="block1">
+        <h1 class="block-item block-header">About</h1>
+        <hr>
+        <h5 class="block-item block-header hide-text">
           ※暴露話があります。最後まで読んでいただけるとありがたいです。
-        </p>
+        </h5>
         <!-- 組織紹介 -->
-        <div class="self-introduction block-item">
-          <h1 class="item-header font-size-L">組織紹介</h1>
-          <p class="item-text font-size-M">
-            私たちは「ubiquitArs」と申します！
-            <br>名前の由来は、説明するのが少し恥ずかしいですが、ラテン語の「ubiquitous（ユビキタス）：　どこにでも在る、偏在する」と「ars（アルス）：　技術、芸術」をつなげてもじったものです。
-            <br>ubiquitArsでは、主にシステム開発を生業としており、「いつでも、だれでも使えるシステム」を作ることを念頭に、日々、開発・業務に取り組んでいます。
-            <br>また、「いつでも、だれでも使えるシステム」を作るために、以下を大事にしています。
-          </p>
-          <ul>
-            <li class="font-size-M">・ ユーザビリティ</li>
-            <li class="font-size-M">・ 会話のインターフェース化</li>
-            <li class="font-size-M">・ 物事の細分化</li>
-            <li class="font-size-M">・ だれでも理解できる作り方</li>
-            <li class="font-size-M">・ 幅広い興味</li>
-          </ul>
-          <p class="item-text font-size-M">
-            わかりにくいと思うのでもう少し細かく説明します。
-          </p>
-          <!-- 非登録者はここまで！ -->
-          <h3 class="item-text item-text-header font-size-M">ユーザビリティ</h3>
-          <p class="item-text font-size-M">
-            大雑把に表現すると、「見え方」と「操作性」です。
-            <br>「見え方」というのは、ユーザーがアプリやサイトを開いてみたときにいかにストレスがないか、きれいかといった点です。
-            <br>アプリやサイトの内容にもよりますが、圧迫感があったり、ごちゃごちゃした画面はあまり見たくありませんよね。
-          </p>
-          <div class="image-block">
-            <img class="image-block-item" src="../images/BadLayout.png" alt="よくない画面レイアウトのイメージ">
-          </div>
-          <p class="item-text font-size-M">
-            <br>「操作性」というのは、ボタンを作るときのことで例えると、そのボタンを押したときにどういったアクションができるのか、直感的にわかるような配置・デザイン・テキストにすることです。
-            <br>押したら何が起こるかわからない、爆発するかもしれないボタンは押したくないですよね。
-          </p>
-          <div class="image-block">
-            <img class="image-block-item" src="../images/BombButton.png" alt="押したら爆発しそうなボタンのイメージ">
-          </div>
-          <h3 class="item-text item-text-header font-size-M">会話のインターフェース化</h3>
-          <p class="item-text font-size-M">
-            簡単に言うと、「関係者内で共通の言葉を使うことを心掛けること」です。
-            <br>業務でシステム開発を行う場合、まず１人ですべてを行うことはあり得ません。少なくとも要望を持ち掛ける人と、要望を実現する人の２人以上が関わると思います。
-            <br>システムを作っていく上で、関係者間で話している言葉とその言葉に対するお互いの認識が違っていると、結果的に要望にそぐわないものが出来上がってしまいます。このようなことを防ぐためになるべく共通理解がある言葉を使い、共通理解がなさそうな言葉を使うときはお互いの認識を合わせつつ話を進めることを心掛けています。
-            <br>自分の知識を振りまくように横文字や業界用語ばかり話して、詳細な確認をしてくれない人に依頼したら、意見を全然くみ取れていないものが出来上がりそうですよね。
-          </p>
-          <div class="image-block">
-            <img class="image-block-item" src="../images/YokomojiKaijin.png" alt="横文字を話す天狗セールスマンのイメージ">
-          </div>
-          <h3 class="item-text item-text-header font-size-M">物事の細分化</h3>
-          <p class="item-text font-size-M">
-            読んで字の如く、「物事をできるだけ細部まで落としこむこと」です。
-            <br>「ジュースを買いに行く」という例えで説明します。一見すると単純な話なのですが、細部に落とし込んでみると下記のような見方もできます。
-            <br>　① 立ち上がる
-            <br>　② 財布を持つ
-            <br>　③ 家を出る
-            <br>　④ エレベーターで１階まで下りる
-            <br>　⑤ エントランスを出て左に２００ｍすすむ
-            <br>　⑥ 左に自動販売機が見えたら止まる
-            <br>　⑦ 自動販売機に２００円入れる
-            <br>　⑧ コカ・コーラを買う
-            <br>きりがないのでここまでにしますが、単純見える事象も、細部まで考えてみると多くの手順が発生しています。
-            <br>普通に生活しているうえではこのようなことを考えても意味はありませんが、システム開発を行う上では「問題点はどこかを考えるとき」などで重要になってきます。
-            <br>また、上記順序を見ると、あることが不足しているのがわかると思います。
-            <br>そうです。「ジュースを買いに行く人の状態」です。システム開発を行う際、この「状態」についても細部まで考えています。
-            <br>この「細分化」ができていないと、「動かしてみないとわからない」「思っていたのと違った」といった問題が発生します。
-            <br>ここまで聞くと、「面倒なことまで考えてて開発に時間かかっていそう」と思われるかもしれませんが、初期の開発段階でここまで考えることによって、後々、時間もお金も損をせずに済みます。
-          </p>
-          <div class="image-block">
-            <img class="image-block-item" src="../images/RiyuuIwanaiYatsu.png" alt="細かい理由を言ってくれない人のイメージ">
-          </div>
-          <h3 class="item-text item-text-header font-size-M">だれでも理解できる作り方</h3>
-          <p class="item-text font-size-M">
-            部分的にはなりますが、簡単に説明すると「なぜこのように作ったのか、修正するときにどこを編集すればいいのか」を理解できるように作ることです。
-            <br>目先の期日ばかりを考えて作業をしていると、「現段階では動くシステム」が出来上がり、追加要件が発生した際に修正に鬼のように時間がかかり、「依頼者へ思わぬ金額の請求が発生する」といった状況になりかねません。
-            <br>そんな事態を招かないためにも、「だれでも理解できる作り方」を心掛けています。（具体的にどんなことをしているかは、、、ヒミツです）
-            <br>また、この「だれでも理解できる作り方」は組織強化や省コスト化にも役立っています。
-          </p>
-          <div class="image-block">
-            <img class="image-block-item" src="../images/TokkanKoujiEikyou.png" alt="急ごしらえの仕事による問題のイメージ">
-          </div>
-          <h3 class="item-text item-text-header font-size-M">幅広い興味</h3>
-          <p class="item-text font-size-M">
-            簡単に説明すると、「今関わっていることだけでなく、ジャンルの異なる様々な事象を見たり、聞いたりしているか」です。
-            <br>システムを作っていると、視野が狭くなってしまうことが時折あります。そんな時、多方面に手を付けていると、問題発生時に様々な改善策を出すことができたり、お客様と話すときにすぐにわかりやすい表現ができたりします。
-            <br>そのため、ubiquitArsは一見したら変に見えるところまで、多方面に興味を持つことを大事にしています。
-          </p>
-          <div class="image-block">
-            <img class="image-block-item" src="../images/tyousaman.png" alt="幅広い興味を生かすイメージ">
+        <div class="block-item">
+          <div class="block2">
+            <h2 class="block-item block-header">組織紹介</h2>
+            <p class="block-item">
+              私たちは「ubiquitArs」と申します！
+              <br>名前の由来は、説明するのが少し恥ずかしいですが、ラテン語の「ubiquitous（ユビキタス）：　どこにでも在る、偏在する」と「ars（アルス）：　技術、芸術」をつなげてもじったものです。
+              <br>ubiquitArsでは、主にシステム開発を生業としており、「いつでも、だれでも使えるシステム」を作ることを念頭に、日々、開発・業務に取り組んでいます。
+              <br>また、「いつでも、だれでも使えるシステム」を作るために、以下を大事にしています。
+            </p>
+            <ul class="block-item">
+              <li>
+                <p>・ ユーザビリティ</p>
+              </li>
+              <li>
+                <p>・ 会話のインターフェース化</p>
+              </li>
+              <li>
+                <p>・ 物事の細分化</p>
+              </li>
+              <li>
+                <p>・ だれでも理解できる作り方</p>
+              </li>
+              <li>
+                <p>・ 幅広い興味</p>
+              </li>
+            </ul>
+            <p class="block-item">
+              わかりにくいと思うのでもう少し細かく説明します。
+            </p>
+            <!-- 非登録者はここまで！ -->
+            <div class="block-item">
+              <div class="block3">
+                <h3 class="block-item h3-w400">ユーザビリティ</h3>
+                <p class="block-item">
+                  大雑把に表現すると、「見え方」と「操作性」です。
+                  <br>「見え方」というのは、ユーザーがアプリやサイトを開いてみたときにいかにストレスがないか、きれいかといった点です。
+                  <br>アプリやサイトの内容にもよりますが、圧迫感があったり、ごちゃごちゃした画面はあまり見たくありませんよね。
+                </p>
+                <div class="block-item image-block">
+                  <img class="image-block-item" src="../images/BadLayout.png" alt="よくない画面レイアウトのイメージ">
+                </div>
+                <p class="block-item">
+                  <br>「操作性」というのは、ボタンを作るときのことで例えると、そのボタンを押したときにどういったアクションができるのか、直感的にわかるような配置・デザイン・テキストにすることです。
+                  <br>押したら何が起こるかわからない、爆発するかもしれないボタンは押したくないですよね。
+                </p>
+                <div class="block-item image-block">
+                  <img class="image-block-item" src="../images/BombButton.png" alt="押したら爆発しそうなボタンのイメージ">
+                </div>
+              </div>
+            </div>
+            <div class="block-item">
+              <div class="block3">
+                <h3 class="block-item h3-w400">会話のインターフェース化</h3>
+                <p class="block-item">
+                  簡単に言うと、「関係者内で共通の言葉を使うことを心掛けること」です。
+                  <br>業務でシステム開発を行う場合、まず１人ですべてを行うことはあり得ません。少なくとも要望を持ち掛ける人と、要望を実現する人の２人以上が関わると思います。
+                  <br>システムを作っていく上で、関係者間で話している言葉とその言葉に対するお互いの認識が違っていると、結果的に要望にそぐわないものが出来上がってしまいます。このようなことを防ぐためになるべく共通理解がある言葉を使い、共通理解がなさそうな言葉を使うときはお互いの認識を合わせつつ話を進めることを心掛けています。
+                  <br>自分の知識を振りまくように横文字や業界用語ばかり話して、詳細な確認をしてくれない人に依頼したら、意見を全然くみ取れていないものが出来上がりそうですよね。
+                </p>
+                <div class="block-item image-block">
+                  <img class="image-block-item" src="../images/YokomojiKaijin.png" alt="横文字を話す天狗セールスマンのイメージ">
+                </div>
+              </div>
+            </div>
+            <div class="block-item">
+              <div class="block3">
+                <h3 class="block-item h3-w400">物事の細分化</h3>
+                <p class="block-item">
+                  読んで字の如く、「物事をできるだけ細部まで落としこむこと」です。
+                  <br>「ジュースを買いに行く」という例えで説明します。一見すると単純な話なのですが、細部に落とし込んでみると下記のような見方もできます。
+                  <br>　① 立ち上がる
+                  <br>　② 財布を持つ
+                  <br>　③ 家を出る
+                  <br>　④ エレベーターで１階まで下りる
+                  <br>　⑤ エントランスを出て左に２００ｍすすむ
+                  <br>　⑥ 左に自動販売機が見えたら止まる
+                  <br>　⑦ 自動販売機に２００円入れる
+                  <br>　⑧ コカ・コーラを買う
+                  <br>きりがないのでここまでにしますが、単純見える事象も、細部まで考えてみると多くの手順が発生しています。
+                  <br>普通に生活しているうえではこのようなことを考えても意味はありませんが、システム開発を行う上では「問題点はどこかを考えるとき」などで重要になってきます。
+                  <br>また、上記順序を見ると、あることが不足しているのがわかると思います。
+                  <br>そうです。「ジュースを買いに行く人の状態」です。システム開発を行う際、この「状態」についても細部まで考えています。
+                  <br>この「細分化」ができていないと、「動かしてみないとわからない」「思っていたのと違った」といった問題が発生します。
+                  <br>ここまで聞くと、「面倒なことまで考えてて開発に時間かかっていそう」と思われるかもしれませんが、初期の開発段階でここまで考えることによって、後々、時間もお金も損をせずに済みます。
+                </p class="block-item">
+                <div class="block-item image-block">
+                  <img class="image-block-item" src="../images/RiyuuIwanaiYatsu.png" alt="細かい理由を言ってくれない人のイメージ">
+                </div>
+              </div>
+            </div>
+            <div class="block-item">
+              <div class="block3">
+                <h3 class="block-item h3-w400">だれでも理解できる作り方</h3>
+                <p class="block-item">
+                  部分的にはなりますが、簡単に説明すると「なぜこのように作ったのか、修正するときにどこを編集すればいいのか」を理解できるように作ることです。
+                  <br>目先の期日ばかりを考えて作業をしていると、「現段階では動くシステム」が出来上がり、追加要件が発生した際に修正に鬼のように時間がかかり、「依頼者へ思わぬ金額の請求が発生する」といった状況になりかねません。
+                  <br>そんな事態を招かないためにも、「だれでも理解できる作り方」を心掛けています。（具体的にどんなことをしているかは、、、ヒミツです）
+                  <br>また、この「だれでも理解できる作り方」は組織強化や省コスト化にも役立っています。
+                </p>
+                <div class="block-item image-block">
+                  <img class="image-block-item" src="../images/TokkanKoujiEikyou.png" alt="急ごしらえの仕事による問題のイメージ">
+                </div>
+              </div>
+            </div>
+            <div class="block-item">
+              <div class="block3">
+                <h3 class="block-item h3-w400">幅広い興味</h3>
+                <p class="block-item">
+                  簡単に説明すると、「今関わっていることだけでなく、ジャンルの異なる様々な事象を見たり、聞いたりしているか」です。
+                  <br>システムを作っていると、視野が狭くなってしまうことが時折あります。そんな時、多方面に手を付けていると、問題発生時に様々な改善策を出すことができたり、お客様と話すときにすぐにわかりやすい表現ができたりします。
+                  <br>そのため、ubiquitArsは一見したら変に見えるところまで、多方面に興味を持つことを大事にしています。
+                </p>
+                <div class="block-item image-block">
+                  <img class="image-block-item" src="../images/tyousaman.png" alt="幅広い興味を生かすイメージ">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- /組織紹介 -->
 
         <!-- 組織の直近の目標 -->
         <div class="block-item">
-          <h1 class="item-header font-size-L">ubiquitArsの直近の目標</h1>
-          <p class="item-text font-size-M">
-            直近の目標は「初めてのお客様を迎えること」です！
-            <br>何卒よろしくお願いします！
-            <br><a href="contact.html">ご声援</a>、いただけるととても励みになります。。。
-          </p>
+          <div class="block2">
+            <h2 class="block-item block-header">ubiquitArsの直近の目標</h2>
+            <p class="block-item">
+              直近の目標は「初めてのお客様を迎えること」です！
+              <br>何卒よろしくお願いします！
+              <br><a href="contact.html">ご声援</a>、いただけるととても励みになります。。。
+            </p>
+          </div>
         </div>
         <!-- /組織の直近の目標 -->
 
         <!-- 責任者の紹介 -->
         <div class="block-item">
-          <h1 class="item-header font-size-L">責任者の紹介</h1>
-          <p class="item-text font-size-M">
-            と、お客様のためにも、組織（？）のためにもいろいろ書かせていただきましたが、「直近の目標」を見ていただいてわかる通り、まだ業務を請け負ったことなく、私１人で組織とも言えない変な名前を名乗っているだけの者でございます。
-            <br>もし、記事を読んで「一緒に活動したい」と思った方、ご連絡いただけるととてもありがたいです。。。
-            <br>
-            <br>読み飛ばしていただいて結構なのですが、自己紹介をさせていただきます。
-            <br>改めまして、私、瀧と申します。
-            <br>現在20代、東京都内でしがないサラリーマンをやっております。
-            <br>一応IT業界で、システムの導入と保守の対応を行っております。まだまだ分からないことだらけで、正直、「他から仕事なんて請け負っている場合ではない。」です。
-            <br>しかし、僭越ながらゆくゆくは自身で仕事を請け負って、フリーランス、もしくは、自分が選んだ仲間と一緒にシステム開発を行いたいと考えております。そのためにも、システム開発について様々な知識を取り込んでいる最中でございます。
-          </p>
+          <div class="block2">
+            <h2 class="block-item block-header">責任者の紹介</h2>
+            <p class="block-item">
+              と、お客様のためにも、組織（？）のためにもいろいろ書かせていただきましたが、「直近の目標」を見ていただいてわかる通り、まだ業務を請け負ったことなく、私１人で組織とも言えない変な名前を名乗っているだけの者でございます。
+              <br>もし、記事を読んで「一緒に活動したい」と思った方、ご連絡いただけるととてもありがたいです。。。
+              <br>
+              <br>読み飛ばしていただいて結構なのですが、自己紹介をさせていただきます。
+              <br>改めまして、私、瀧と申します。
+              <br>現在20代、東京都内でしがないサラリーマンをやっております。
+              <br>一応IT業界で、システムの導入と保守の対応を行っております。まだまだ分からないことだらけで、正直、「他から仕事なんて請け負っている場合ではない。」です。
+              <br>しかし、僭越ながらゆくゆくは自身で仕事を請け負って、フリーランス、もしくは、自分が選んだ仲間と一緒にシステム開発を行いたいと考えております。そのためにも、システム開発について様々な知識を取り込んでいる最中でございます。
+            </p>
+          </div>
         </div>
         <!-- /責任者の紹介 -->
 
         <!-- 最後に -->
         <div class="block-item">
-          <h1 class="item-header font-size-L">最後に</h1>
-          <p class="item-text font-size-M">
-            ubiquitArsはまだまだ未熟で、正直、まだまだ「組織の理念に沿ったシステム開発」「お客様の要望に沿ったシステム開発」を行うことは難しいとも思われます。
-            <br>しかし、本記事で書かせていただいたことを念頭に活動してゆきたいという思いは確かですので、ご声援・ご鞭撻のほど何卒よろしくお願いいたします。
-            <br>
-            <br>もしもですが、ご依頼の方はまずは本サイトからご連絡いただき、一度お電話でいろいろとお話をさせていただければと存じます。
-            <br>ここまで読み進めていただいた方、誠にありがとうございます。
-            <br>
-            <br>ubiquitArs 瀧
-          </p>
+          <div class="block2">
+            <h2 class="block-item block-header">最後に</h2>
+            <p class="block-item">
+              ubiquitArsはまだまだ未熟で、正直、まだまだ「組織の理念に沿ったシステム開発」「お客様の要望に沿ったシステム開発」を行うことは難しいとも思われます。
+              <br>しかし、本記事で書かせていただいたことを念頭に活動してゆきたいという思いは確かですので、ご声援・ご鞭撻のほど何卒よろしくお願いいたします。
+              <br>
+              <br>もしもですが、ご依頼の方はまずは本サイトからご連絡いただき、一度お電話でいろいろとお話をさせていただければと存じます。
+              <br>ここまで読み進めていただいた方、誠にありがとうございます。
+              <br>
+              <br>ubiquitArs 瀧
+            </p>
+          </div>
         </div>
         <!-- /最後に -->
       </div>
     </div>
-    <!-- /アバウト -->
+    <!-- /about -->
 
-    <!-- アクティビティ -->
-    <div class="activity wrapper">
-      <div class="block-items">
-        <h1 class="block-header font-size-L">Activity</h1>
+    <!-- activity -->
+    <div class="activity main-item wrapper">
+      <div class="block1">
+        <h1 class="block-item block-header">Activity</h1>
+        <hr>
         <article class="block-item">
-          <h2 class="item-header font-size-L">Webサイト開設いたしました！</h2>
-          <h6 class="item-date font-size-S">2024/04/30</h6>
-          <p class="item-text font-size-M">Webサイト作成の勉強をした後、「すぐ作れるものだろう」と思いそのままずるずるとWebサイト作らずにいましたが、この度やっと作成いたしました。<br>BootStrapを使用して、簡単に作ってしまおうかと考えましたが、今回は復習と実際の手間の量を確認するためにもHTMLとCSSを一から書くことにしました。<br>実際に一から書いてみると、レスポンシブデザインについて様々な問題にぶち当たり、そのたびに情報収集、動作確認を何度も行うこととなり、かなり勉強になりました。今回の学びを生かし、今後いろいろな場面で使えるHTML・CSSのテンプレートを作っていきたいと思っています。（レスポンシブについてそのたびに考えるのは酷なので、様々なWebサイト、Webアプリで使用できるような、テンプレートを作っていきたいです。）</p>
+          <div class="block2">
+            <h2 class="block-item">Webサイト開設いたしました！</h2>
+            <h5 class="block-item">2024/04/30</h5>
+            <p class="block-item">
+              Webサイト作成の勉強をした後、「すぐ作れるものだろう」と思いそのままずるずるとWebサイト作らずにいましたが、この度やっと作成いたしました。<br>BootStrapを使用して、簡単に作ってしまおうかと考えましたが、今回は復習と実際の手間の量を確認するためにもHTMLとCSSを一から書くことにしました。<br>実際に一から書いてみると、レスポンシブデザインについて様々な問題にぶち当たり、そのたびに情報収集、動作確認を何度も行うこととなり、かなり勉強になりました。今回の学びを生かし、今後いろいろな場面で使えるHTML・CSSのテンプレートを作っていきたいと思っています。（レスポンシブについてそのたびに考えるのは酷なので、様々なWebサイト、Webアプリで使用できるような、テンプレートを作っていきたいです。）
+            </p>
+          </div>
         </article>
         <article class="block-item">
-          <h2 class="item-header font-size-L">Webサイト開設いたしました！</h2>
-          <h6 class="item-date font-size-S">2024/04/20</h6>
-          <p class="item-text font-size-M">Webサイト作成の勉強をした後、「すぐ作れるものだろう」と思いそのままずるずるとWebサイト作らずにいましたが、この度やっと作成いたしました。<br>BootStrapを使用して、簡単に作ってしまおうかと考えましたが、今回は復習と実際の手間の量を確認するためにもHTMLとCSSを一から書くことにしました。<br>実際に一から書いてみると、レスポンシブデザインについて様々な問題にぶち当たり、そのたびに情報収集、動作確認を何度も行うこととなり、かなり勉強になりました。今回の学びを生かし、今後いろいろな場面で使えるHTML・CSSのテンプレートを作っていきたいと思っています。（レスポンシブについてそのたびに考えるのは酷なので、様々なWebサイト、Webアプリで使用できるような、テンプレートを作っていきたいです。）</p>
+          <div class="block2">
+            <h2 class="block-item">Webサイト開設いたしました！</h2>
+            <h5 class="block-item">2024/04/20</h5>
+            <p class="block-item">
+              Webサイト作成の勉強をした後、「すぐ作れるものだろう」と思いそのままずるずるとWebサイト作らずにいましたが、この度やっと作成いたしました。<br>BootStrapを使用して、簡単に作ってしまおうかと考えましたが、今回は復習と実際の手間の量を確認するためにもHTMLとCSSを一から書くことにしました。<br>実際に一から書いてみると、レスポンシブデザインについて様々な問題にぶち当たり、そのたびに情報収集、動作確認を何度も行うこととなり、かなり勉強になりました。今回の学びを生かし、今後いろいろな場面で使えるHTML・CSSのテンプレートを作っていきたいと思っています。（レスポンシブについてそのたびに考えるのは酷なので、様々なWebサイト、Webアプリで使用できるような、テンプレートを作っていきたいです。）
+            </p>
+          </div>
         </article>
         <article class="block-item">
-          <h2 class="item-header font-size-L">Webサイト開設いたしました！</h2>
-          <h6 class="item-date font-size-S">2024/04/10</h6>
-          <p class="item-text font-size-M">
-            Webサイト作成の勉強をした後、「すぐ作れるものだろう」と思いそのままずるずるとWebサイト作らずにいましたが、この度やっと作成いたしました。
-            <br>BootStrapを使用して、簡単に作ってしまおうかと考えましたが、今回は復習と実際の手間の量を確認するためにもHTMLとCSSを一から書くことにしました。
-            <br>実際に一から書いてみると、レスポンシブデザインについて様々な問題にぶち当たり、そのたびに情報収集、動作確認を何度も行うこととなり、かなり勉強になりました。今回の学びを生かし、今後いろいろな場面で使えるHTML・CSSのテンプレートを作っていきたいと思っています。（レスポンシブについてそのたびに考えるのは酷なので、様々なWebサイト、Webアプリで使用できるような、テンプレートを作っていきたいです。）
-          </p>
+          <div class="block2">
+            <h2 class="block-item">Webサイト開設いたしました！</h2>
+            <h5 class="block-item">2024/04/10</h5>
+            <p class="block-item">
+              Webサイト作成の勉強をした後、「すぐ作れるものだろう」と思いそのままずるずるとWebサイト作らずにいましたが、この度やっと作成いたしました。<br>BootStrapを使用して、簡単に作ってしまおうかと考えましたが、今回は復習と実際の手間の量を確認するためにもHTMLとCSSを一から書くことにしました。<br>実際に一から書いてみると、レスポンシブデザインについて様々な問題にぶち当たり、そのたびに情報収集、動作確認を何度も行うこととなり、かなり勉強になりました。今回の学びを生かし、今後いろいろな場面で使えるHTML・CSSのテンプレートを作っていきたいと思っています。（レスポンシブについてそのたびに考えるのは酷なので、様々なWebサイト、Webアプリで使用できるような、テンプレートを作っていきたいです。）
+            </p>
+          </div>
         </article>
       </div>
     </div>
-    <!-- /アクティビティ -->
-
+    <!-- /activity -->
   </main>
-  <!-- /ホームコンテンツ -->
+  <!-- /HOME -->
 
-  <!-- フッター -->
+  <!-- FOOTER -->
   <footer>
     <div class="wrapper">
-      
+
     </div>
   </footer>
-  <!-- /フッター -->
+  <!-- /FOOTER -->
 </body>
 
 </html>
