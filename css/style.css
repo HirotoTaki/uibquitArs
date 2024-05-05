@@ -122,7 +122,7 @@ footer {
 }
 .first-view {
   background-image: url(../images/first-view.jpg);
-  background-color: rgba(255, 255, 255, 0.486);
+  background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: color;
   height: auto;
   background-size: cover;
