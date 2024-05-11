@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+main {
+  background-color: bisque;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+}
+
+.item {
+  background-color: #0bd;
+  color: #fff;
+  padding: 10px;
+}
