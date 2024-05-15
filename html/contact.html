@@ -1,41 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="widh4=device-widh4, initial-scale=1.0"> -->
   <title>ubiquitArs</title>
 
   <!-- Fonts -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=M+PLUS+1+Code&family=IBM+Plex+Sans+JP&family=Zen+Maru+Gothic&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=M+PLUS+1+Code&family=IBM+Plex+Sans+JP&family=Zen+Maru+Goh4ic&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <!-- <link rel="stylesheet" href="../css/ress.css">
+  <link rel="stylesheet" href="../css/ress.css">
   <link rel="stylesheet" href="../css/fonts.css">
-  <link rel="stylesheet" href="../css/style.css"> -->
-  <link rel="stylesheet" href="../css/test.css">
+  <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
-  <!-- HEADER -->
-  <!-- /HEADER -->
-
-  <!-- HOME -->
-  <main id="contact">
-    <div class="container">
-      <div class="item">Item 1</div>
-      <div class="item">Item 2</div>
-      <div class="item">Item 3</div>
-      <div class="item">Item 4</div>
-      <div class="item">Item 5</div>
-      <div class="item">Item 6</div>
+  <div>
+    <!-- HEADER -->
+    <header>
+      <div class="wrapper">
+        <div class="header-block">
+          <!-- ホームボタン -->
+          <div class="header-item logo">
+            <h1><a href="index.html">ubiquitArs</a></h1>
+          </div>
+  
+          <!-- ヘッダーメニュー -->
+          <div class="header-item">
+            <ul>
+              <li>
+                <h3 class="h3-normal"><a href="activity.html">ACTIVITY</a></h3>
+              </li>
+              <li>
+                <h3 class="h3-normal"><a href="works.html">WORKS</a></h3>
+              </li>
+              <li>
+                <h3 class="h3-normal"><a href="contact.html">CONTACT</a></h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+  
+  
+    <!-- CONTACT -->
+    <div class="wrapper">
+      <main id="contact">
+        <div class="block1">
+          <!-- page-description -->
+          <div class="page-header">
+            <h1 class="block-item block-header">Contact</h1>
+            <hr>
+            <p class="block-item">
+              何なりとお問い合わせくださいませ。
+            </p>
+          </div>
+          <!-- /page-description -->
+  
+          <form>
+            <div class="grid_form">
+              <h4 class="grid_form-item">お名前</h4>
+              <h4><input type="text" name="contact-name"></h4>
+              <h4 class="grid_form-item">メールアドレス</h4>
+              <h4><input type="email" name="e-mail"></h4>
+              <h4 class="grid_form-item">ご身分</h4>
+              <h4>
+                <select name="social-position">
+                  <option value="unselected">選択してください</option>
+                  <option value="student">学生</option>
+                  <option value="freeter">フリーター</option>
+                  <option value="general-emp">一般社員</option>
+                  <option value="executive">会社役員</option>
+                  <option value="sole-pro">個人事業主</option>
+                  <option value="daphnia">ミジンコ</option>
+                  <option value="ape">類人猿</option>
+                  <option value="human">人間</option>
+                  <option value="macho">マッチョ</option>
+                  <option value="iq228">IQ228</option>
+                  <option value="almighty-god">全能神</option>
+                  <option value="social-position-etc">その他</option>
+                </select>
+              </h4>
+              <h4 class="grid_form-item">お問い合わせ区分</h4>
+              <h4>
+                <select name="contact-category">
+                  <option value="unselected">選択してください</option>
+                  <option value="greeting">ご挨拶</option>
+                  <option value="repo">ご報告</option>
+                  <option value="business">ご依頼</option>
+                  <option value="question-business">ご質問（依頼関連）</option>
+                  <option value="question-it">質問（IT全般）</option>
+                  <option value="question-etc">質問（その他）</option>
+                  <option value="request-works">意見・要望（実績・ポートフォリオへ）</option>
+                  <option value="request-site">意見・要望（当サイトへ）</option>
+                  <option value="request-org">意見・要望（組織へ）</option>
+                  <option value="request-etc">意見・要望（その他）</option>
+                  <option value="contact-category-etc">その他</option>
+                </select>
+              </h4>
+              <h4 class="grid_form-item">お問い合わせ内容</h4>
+              <h4>
+                <textarea name="contact-sentence" id="contact-sentence"></textarea>
+              </h4>
+              <div class="grid_form-item form-button">
+                <h4><input type="submit" value="">送信する</h4>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
     </div>
-  </main>
-  <!-- /HOME -->
+    <!-- /CONTACT -->
 
+  </div>
+  
   <!-- FOOTER -->
   <footer>
     <div class="wrapper">
