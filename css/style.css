@@ -171,12 +171,20 @@ header {
   width: 100%;
 }
 
-.header-block {
+header .wrapper {
   display: flex;
   align-items: last baseline;
   justify-content: space-between;
   height: fit-content;
-  padding: 0.8rem 0;
+  padding: 0.8rem clamp(4rem, calc(3.9rem + 0.625vw), 4.2rem);
+}
+
+header a:active, header a:hover, header a:visited {
+  color: #000;
+}
+
+header li a:hover {
+  text-decoration: underline;
 }
 
 /* menu */
@@ -234,12 +242,13 @@ footer {
   margin-top: 1rem;
 }
 
-.works-slide {
-  background-color: whitesmoke;
-  border-radius: 10px;
+/* 各スライド */
+.grid_slide {
+  background-color: #91aab4;
   width: calc(90vmin - 10rem);
+  height: calc(54vmin - 6rem);
   min-width: 40rem;
-  aspect-ratio: 5/3;
+  min-height: 24rem;
 }
 
 /* About */
@@ -267,6 +276,26 @@ footer {
   padding: 0.5rem clamp(1rem, calc(2.4rem + 0.825vw), 5.2rem);
   background-color: rgb(255, 247, 209);
   border-radius: 1rem;
+}
+
+.move-activity-page {
+  width: fit-content;
+  margin: 4vmin auto 5vmin;
+}
+
+.move-activity-page a {
+  background-color: #636363;
+  border-radius: 1rem;
+  padding: 1vmin 4vmin;
+}
+
+.move-activity-page a:active, .move-activity-page a:visited {
+  color: white;
+}
+
+.move-activity-page a:hover {
+  background-color: #91aab4;
+  color: black;
 }
 
 /* ACTIVITY
